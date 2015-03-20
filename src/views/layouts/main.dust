@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>{settings.title}</title>
+  {settings.bundle.vendor.styles|s}
+  {settings.bundle.main.styles|s}
+</head>
+<body>
+
+{+body}{/body}
+
+{settings.bundle.vendor.scripts|s}
+{settings.bundle.main.scripts|s}
+</body>
+</html>
