@@ -25,6 +25,10 @@ module.exports = {
         {
           src: './bower_components/lodash/dist/lodash.js',
           minSrc: './bower_components/lodash/dist/lodash.min.js'
+        },
+        {
+          src: './bower_components/angular/angular.js',
+          minSrc: './bower_components/angular/angular.min.js'
         }
       ],
       styles: [
