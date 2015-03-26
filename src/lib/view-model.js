@@ -2,36 +2,6 @@ var spreadsheetService = require('../lib/services/spreadsheet-service');
 var bluebird = require('bluebird');
 var _ = require('lodash');
 
-/* People
-{ rows:
-{ '1':
-  { '1': 'Name',
-    '2': 'Total Talks',
-    '3': 'no-slides',
-    '4': 'prepared',
-    '5': 'interactive',
-    '6': 'contributor',
-    '7': 'advocate',
-    '8': 'hacker',
-    '9': 'luddite',
-    '10': 'terminal-junkie',
-    '11': 'motormouth',
-    '12': 'teacher' },
-  '2': { '1': 'Josh Ewer', '2': 3 },
-  '3': { '1': 'Tim Schmidt', '2': 3 },
-  '9': { '1': 'Chris Montgomery', '2': 2, '3': 1, '4': 1, '6': 1 },
-  info:
-  { spreadsheetId: "54321",
-    worksheetId: "qwerty",
-    worksheetTitle: 'People',
-    worksheetUpdated: Wed Mar 25 2015 10:22:15 GMT-0500 (CDT),
-    authors: 'christopher.montgomery',
-    totalCells: 105,
-    totalRows: 44,
-    lastRow: 44,
-    nextRow: 45 } }
-*/
-
 /* Badges
 { rows:
 { '1': { '1': 'id', '2': 'type', '3': 'name', '4': 'description' },
@@ -67,6 +37,36 @@ var _ = require('lodash');
     nextRow: 16 } }
 */
 
+/* People
+{ rows:
+{ '1':
+  { '1': 'Name',
+    '2': 'Total Talks',
+    '3': 'no-slides',
+    '4': 'prepared',
+    '5': 'interactive',
+    '6': 'contributor',
+    '7': 'advocate',
+    '8': 'hacker',
+    '9': 'luddite',
+    '10': 'terminal-junkie',
+    '11': 'motormouth',
+    '12': 'teacher' },
+  '2': { '1': 'Josh Ewer', '2': 3 },
+  '3': { '1': 'Tim Schmidt', '2': 3 },
+  '9': { '1': 'Chris Montgomery', '2': 2, '3': 1, '4': 1, '6': 1 },
+  info:
+  { spreadsheetId: "54321",
+    worksheetId: "qwerty",
+    worksheetTitle: 'People',
+    worksheetUpdated: Wed Mar 25 2015 10:22:15 GMT-0500 (CDT),
+    authors: 'christopher.montgomery',
+    totalCells: 105,
+    totalRows: 44,
+    lastRow: 44,
+    nextRow: 45 } }
+*/
+
 module.exports = function () {
   return bluebird.all([
     spreadsheetService("People"),
@@ -74,7 +74,11 @@ module.exports = function () {
   ])
     .spread(function (_people, _badges) {
 
-      var badges = [];
+      // --------------------
+      // Badges
+      // --------------------
+
+      var badges = []; // todo make map
       var badgeLegend = _.reduce(_badges.rows['1'], function (result, val, key) {
         result[val] = null;
         return result;
@@ -90,8 +94,31 @@ module.exports = function () {
         badges.push(b);
       });
 
+      // --------------------
+      // People
+      // --------------------
+
+      var people = [];
+      var peopleLegend = _.reduce(_people.rows['1'], function (result, val, key) {
+        result[val] = null;
+        return result;
+      }, {});
+      delete _people.rows['1'];
+
+      _.forEach(_people.rows, function (val, key) {
+        var p = {};
+        p.name = val['1'];
+        var valCpy = _.defaults({}, val);
+        delete valCpy['1'];
+        p.badges = {};
+
+        //todo
+
+        people.push(p);
+      });
+
       return {
-        people: _people,
+        people: people,
         badges: badges
       };
 

@@ -27,6 +27,8 @@ module.exports = function () {
       log.error('Missing required environment variable "env.DRIVE_USER". Will be unable to reach google spreadsheets.');
     if (!process.env.PEM_KEY_FILE)
       log.error('Missing required environment variable "env.PEM_KEY_FILE". Will be unable to reach google spreadsheets.');
+    if (!process.env.SPREADSHEET_ID)
+      log.error('Missing required environment variable "env.SPREADSHEET_ID". Will be unable to reach google spreadsheets.');
   }
 
   app.use(bodyParser.json());
