@@ -120,3 +120,7 @@ gulp.task('bundle', 'Builds all static files', function () {
 gulp.task('build', 'Cleans and builds all static files', ['clean'], function () {
   return bundle();
 });
+
+//noop
+gulp.task('jshint', function() {});
+gulp.task('fejshint', function() {});

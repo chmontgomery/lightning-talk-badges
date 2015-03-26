@@ -8,6 +8,7 @@ var compression = require('compression');
 var cons = require('consolidate');
 var errorHandler = require('./lib/error-handler');
 var requestLogger = require('./lib/request-logger');
+var log = require('./lib/services/logger-service');
 
 module.exports = function () {
   var app = express();
@@ -20,7 +21,14 @@ module.exports = function () {
   // app.use(favicon(__dirname + '/public/images/favicon.ico'));
   if (process.env.NODE_ENV !== 'production') {
     app.use(requestLogger()); // log all requests
+  } else {
+    // validate ENV variables are set in prod, otherwise we won't be able to reach google spreadsheet
+    if (!process.env.DRIVE_USER)
+      log.error('Missing required environment variable "env.DRIVE_USER". Will be unable to reach google spreadsheets.');
+    if (!process.env.PEM_KEY_FILE)
+      log.error('Missing required environment variable "env.PEM_KEY_FILE". Will be unable to reach google spreadsheets.');
   }
+
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({
     extended: true

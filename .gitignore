@@ -5,3 +5,6 @@ node_modules/
 /target/coverage
 /public
 bundle.result.json
+*.p12
+*.pem
+lightning-bages*.json

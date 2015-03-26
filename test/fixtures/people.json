@@ -1,0 +1,208 @@
+{
+  "rows": {
+    "1": {
+      "1": "Name",
+      "2": "Total Talks",
+      "3": "no-slides",
+      "4": "prepared",
+      "5": "interactive",
+      "6": "contributor",
+      "7": "advocate",
+      "8": "hacker",
+      "9": "luddite",
+      "10": "terminal-junkie",
+      "11": "motormouth",
+      "12": "teacher"
+    },
+    "2": {
+      "1": "Josh Ewer",
+      "2": 3
+    },
+    "3": {
+      "1": "Tim Schmidt",
+      "2": 3
+    },
+    "4": {
+      "1": "Doug Swisher",
+      "2": 3
+    },
+    "5": {
+      "1": "Jesse Gavin",
+      "2": 2
+    },
+    "6": {
+      "1": "Terry Johnson",
+      "2": 2,
+      "12": 1
+    },
+    "7": {
+      "1": "Brent McCullough",
+      "2": 2
+    },
+    "8": {
+      "1": "Scott Canham",
+      "2": 2
+    },
+    "9": {
+      "1": "Chris Montgomery",
+      "2": 2,
+      "3": 1,
+      "4": 1,
+      "6": 1
+    },
+    "10": {
+      "1": "Rob Hurkes",
+      "2": 2
+    },
+    "11": {
+      "1": "Terry Guan",
+      "2": 1
+    },
+    "12": {
+      "1": "Derian Anderson",
+      "2": 1
+    },
+    "13": {
+      "1": "Dylan Roy",
+      "2": 1
+    },
+    "14": {
+      "1": "Crystal Koenig",
+      "2": 1,
+      "5": 1
+    },
+    "15": {
+      "1": "Douglas Esanbock",
+      "2": 1
+    },
+    "16": {
+      "1": "Jordan Terrell",
+      "2": 1
+    },
+    "17": {
+      "1": "Jason Reed",
+      "2": 1
+    },
+    "18": {
+      "1": "Chad Lahn",
+      "2": 1
+    },
+    "19": {
+      "1": "Shaun Cooper",
+      "2": 1
+    },
+    "20": {
+      "1": "Steve Hebert",
+      "2": 1
+    },
+    "21": {
+      "1": "Steve Stevenson",
+      "2": 1
+    },
+    "22": {
+      "1": "David Meyer",
+      "2": 1
+    },
+    "23": {
+      "1": "Ben Sinchai",
+      "2": 1
+    },
+    "24": {
+      "1": "Chris Tersteeg",
+      "2": 1
+    },
+    "25": {
+      "1": "David Meyer",
+      "2": 1
+    },
+    "26": {
+      "1": "Conrad Dean",
+      "2": 1
+    },
+    "27": {
+      "1": "Luke Sawatsky",
+      "2": 1
+    },
+    "28": {
+      "1": "Dustin Dittmer",
+      "2": 1,
+      "12": 1
+    },
+    "29": {
+      "1": "CJ Hanson",
+      "2": 1
+    },
+    "30": {
+      "1": "Kevin",
+      "2": 1,
+      "11": 1
+    },
+    "31": {
+      "1": "Chris Nelson",
+      "2": 1
+    },
+    "32": {
+      "1": "Ming Yu",
+      "2": 0
+    },
+    "33": {
+      "1": "Ryan Bell",
+      "2": 0
+    },
+    "34": {
+      "1": "Jeff Jackson",
+      "2": 0
+    },
+    "35": {
+      "1": "Jason Motylinski",
+      "2": 0
+    },
+    "36": {
+      "1": "Senthil Rajasekharan",
+      "2": 0
+    },
+    "37": {
+      "1": "Scott Ray",
+      "2": 0
+    },
+    "38": {
+      "1": "Sarah Montgomery",
+      "2": 0
+    },
+    "39": {
+      "1": "Phil Whipps",
+      "2": 0
+    },
+    "40": {
+      "1": "John Loesch",
+      "2": 0
+    },
+    "41": {
+      "1": "Bob Galuska",
+      "2": 0
+    },
+    "42": {
+      "1": "Ryan Reuss",
+      "2": 0
+    },
+    "43": {
+      "1": "Caleb Santangelo",
+      "2": 0
+    },
+    "44": {
+      "1": "David Tinnes",
+      "2": 0
+    }
+  },
+  "info": {
+    "spreadsheetId": "54321",
+    "worksheetId": "qwerty",
+    "worksheetTitle": "People",
+    "worksheetUpdated": "Wed Mar 25 2015 10:22:15 GMT-0500 (CDT)",
+    "authors": "christopher.montgomery",
+    "totalCells": 105,
+    "totalRows": 44,
+    "lastRow": 44,
+    "nextRow": 45
+  }
+}

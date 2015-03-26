@@ -1,0 +1,105 @@
+{
+  "rows": {
+    "1": {
+      "1": "id",
+      "2": "type",
+      "3": "name",
+      "4": "description"
+    },
+    "2": {
+      "1": "beginner",
+      "2": "bronze",
+      "3": "Beginner",
+      "4": "give 1 lightning talk"
+    },
+    "3": {
+      "1": "experienced",
+      "2": "silver",
+      "3": "Experienced",
+      "4": "give 3 lightning talks"
+    },
+    "4": {
+      "1": "lightning-master",
+      "2": "gold",
+      "3": "Lightning Master",
+      "4": "give 10 lightning talks"
+    },
+    "5": {
+      "1": "no-slides",
+      "2": "bronze",
+      "3": "Look Ma, No Slides!",
+      "4": "talk does not include any powerpoint (or equivalent) slides"
+    },
+    "6": {
+      "1": "prepared",
+      "2": "bronze",
+      "3": "Prepared",
+      "4": "stop talking in the allotted time"
+    },
+    "7": {
+      "1": "interactive",
+      "2": "bronze",
+      "3": "Interactive",
+      "4": "engage the audience besides answering questions"
+    },
+    "8": {
+      "1": "contributor",
+      "2": "bronze",
+      "3": "Contributor",
+      "4": "upload content related to your talk to the MSP-LIGHTNING-TALKS GitHub repo"
+    },
+    "9": {
+      "1": "advocate",
+      "2": "bronze",
+      "3": "Advocate",
+      "4": "wear clothing related to your talk"
+    },
+    "10": {
+      "1": "hacker",
+      "2": "gold",
+      "3": "Hacker",
+      "4": "during your talk, extract data from a \"secure\" system you should otherwise not have access to"
+    },
+    "11": {
+      "1": "luddite",
+      "2": "silver",
+      "3": "Luddite",
+      "4": "give an entire talk without a computer"
+    },
+    "12": {
+      "1": "terminal-junkie",
+      "2": "bronze",
+      "3": "Terminal Junkie",
+      "4": "do an entire talk without leaving your terminal"
+    },
+    "13": {
+      "1": "motormouth",
+      "2": "silver",
+      "3": "Motormouth",
+      "4": "finished talking in under 7 minutes"
+    },
+    "14": {
+      "1": "teacher",
+      "2": "bronze",
+      "3": "Teacher",
+      "4": "use physical props as part of your talk"
+    },
+    "15": {
+      "1": "teamwork",
+      "2": "silver",
+      "3": "Teamwork",
+      "4": "coordinate your talk with another person\"s talk in some way"
+    }
+  },
+  "info": {
+    "spreadsheetId": "12345",
+    "worksheetId": "poiuy",
+    "worksheetTitle": "Badges",
+    "worksheetUpdated": "Wed Mar 25 2015 10:22:15 GMT-0500 (CDT)",
+    "authors": "christopher.montgomery",
+    "totalCells": 60,
+    "totalRows": 15,
+    "lastRow": 15,
+    "nextRow": 16
+  }
+}
