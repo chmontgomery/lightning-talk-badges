@@ -35,7 +35,7 @@ describe('view-model', function () {
           'name': 'Josh Ewer',
           'badges': {
             'beginner': 1,
-            'experienced': 3
+            'experienced': 1
           }
         });
       should.deepEqual(data.people[7],

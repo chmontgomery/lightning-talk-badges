@@ -99,10 +99,10 @@ module.exports = function () {
       // --------------------
 
       var people = [];
-      var peopleLegend = _.reduce(_people.rows['1'], function (result, val, key) {
-        result[val] = null;
-        return result;
-      }, {});
+      var peopleLegend = _.defaults({}, _people.rows['1']);
+      delete peopleLegend['1'];
+      delete peopleLegend['2'];
+
       delete _people.rows['1'];
 
       _.forEach(_people.rows, function (val, key) {
@@ -112,7 +112,19 @@ module.exports = function () {
         delete valCpy['1'];
         p.badges = {};
 
-        //todo
+        _.forEach(valCpy, function (v, k) {
+          if (k === '2') { // special case. refers to # of talks
+            if (v >= 1)
+              p.badges.beginner = 1;
+            if (v >= 3)
+              p.badges.experienced = 1;
+            if (v >= 5)
+              p.badges.master = 1;
+          } else if (peopleLegend[k]) {
+            p.badges[peopleLegend[k]] = v;
+          }
+        });
+
 
         people.push(p);
       });
