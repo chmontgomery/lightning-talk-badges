@@ -61,9 +61,7 @@ module.exports = {
   },
   copy: [
     {
-      src: [
-          srcPath + '/images/**'
-      ],
+      src: srcPath + '/**/*.{png,html,ico,svg,ttf,woff}',
       base: srcPath
     },
     {

@@ -1,7 +1,8 @@
+/*global angular */
 (function () {
   'use strict';
 
-  var module = angular.module('DominionTracker.directives', []);
+  var module = angular.module('LightningBadges.directives', []);
 
   module.directive('home', function () {
     return {
@@ -15,4 +16,5 @@
       }
     };
   });
+
 })();

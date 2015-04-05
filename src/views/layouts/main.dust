@@ -7,7 +7,7 @@
   {settings.bundle.vendor.styles|s}
   {settings.bundle.main.styles|s}
 </head>
-<body>
+<body ng-app="LightningBadges">
 
 {+body}{/body}
 

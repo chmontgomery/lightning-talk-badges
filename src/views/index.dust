@@ -1,5 +1,5 @@
 {>"layouts/main"/}
 
 {<body}
-  <home people-string='{{ JSON.stringify(people) }}' badges-string='{{ JSON.stringify(badges) }}'></home>
+  <home people-string='{people|js|s}' badges-string='{badges|js|s}'></home>
 {/body}
