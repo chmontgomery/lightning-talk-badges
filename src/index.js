@@ -23,12 +23,15 @@ module.exports = function () {
     app.use(requestLogger()); // log all requests
   } else {
     // validate ENV variables are set in prod, otherwise we won't be able to reach google spreadsheet
-    if (!process.env.DRIVE_USER)
+    if (!process.env.DRIVE_USER) {
       log.error('Missing required environment variable "env.DRIVE_USER". Will be unable to reach google spreadsheets.');
-    if (!process.env.PEM_KEY_FILE)
+    }
+    if (!process.env.PEM_KEY_FILE) {
       log.error('Missing required environment variable "env.PEM_KEY_FILE". Will be unable to reach google spreadsheets.');
-    if (!process.env.SPREADSHEET_ID)
+    }
+    if (!process.env.SPREADSHEET_ID) {
       log.error('Missing required environment variable "env.SPREADSHEET_ID". Will be unable to reach google spreadsheets.');
+    }
   }
 
   app.use(bodyParser.json());

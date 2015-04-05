@@ -114,12 +114,15 @@ module.exports = function () {
 
         _.forEach(valCpy, function (v, k) {
           if (k === '2') { // special case. refers to # of talks
-            if (v >= 1)
+            if (v >= 1) {
               p.badges.beginner = 1;
-            if (v >= 3)
+            }
+            if (v >= 3) {
               p.badges.experienced = 1;
-            if (v >= 5)
+            }
+            if (v >= 5) {
               p.badges.master = 1;
+            }
           } else if (peopleLegend[k]) {
             p.badges[peopleLegend[k]] = v;
           }

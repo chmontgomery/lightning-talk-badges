@@ -30,7 +30,7 @@ var gulp = require('gulp'),
       thresholds: {
         statements: 82,
         branches: 33,
-        functions: 70,
+        functions: 50,
         lines: 82
       }
     }
