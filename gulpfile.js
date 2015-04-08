@@ -86,7 +86,6 @@ gulp.task('clean', 'Clean all assets out of /public', function (cb) {
 
 gulp.task('watch', 'Watch assets and build on change', function (cb) {
   var livereload = require('gulp-livereload');
-  var livereloadServer = livereload();
   livereload.listen();
   gbundle.watch({
     configPath: path.join(__dirname, 'bundle.config.js'),
@@ -97,7 +96,10 @@ gulp.task('watch', 'Watch assets and build on change', function (cb) {
     dest: path.join(__dirname, publicPath)
   });
   gulp.watch(publicPath + '/**/*.*').on('change', function (file) {
-    livereloadServer.changed(file.path);
+    livereload(file);
+    //console.log(gutil.colors.grey('Changed:', file));
+    //var d = new Date();
+    //console.log(gutil.colors.bgBlue('browser livereload at ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds()));
   });
   cb();
 });

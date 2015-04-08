@@ -17,4 +17,17 @@
     };
   });
 
+  module.directive('personBadges', function () {
+    return {
+      restrict: "E",
+      replace: true,
+      controller: 'PersonBadgesController',
+      templateUrl: '/public/partials/personBadges.html',
+      scope: {
+        badges: "=",
+        types: "="
+      }
+    };
+  });
+
 })();

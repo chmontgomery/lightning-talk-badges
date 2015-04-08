@@ -7,8 +7,10 @@
   module.controller('HomeController', ['$scope', function ($scope) {
     $scope.people = JSON.parse($scope.peopleString);
     $scope.badges = JSON.parse($scope.badgesString);
-    console.log($scope.people);
-    console.log($scope.badges);
+  }]);
+
+  module.controller('PersonBadgesController', ['$scope', function ($scope) {
+
   }]);
 
 })();

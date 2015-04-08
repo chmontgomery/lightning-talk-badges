@@ -3,6 +3,7 @@
 
   <div ng-repeat="person in people">
     <div>{{person.name}}</div>
+    <person-badges badges="person.badges" types="badges"></person-badges>
   </div>
 
 </div>
