@@ -2,206 +2,255 @@
   "rows": {
     "1": {
       "1": "Name",
-      "2": "Total Talks",
-      "3": "no-slides",
-      "4": "prepared",
-      "5": "interactive",
-      "6": "contributor",
-      "7": "advocate",
-      "8": "hacker",
-      "9": "luddite",
-      "10": "terminal-junkie",
-      "11": "motormouth",
-      "12": "teacher"
+      "2": "Total Points",
+      "3": "Total Talks",
+      "4": "no-slides",
+      "5": "prepared",
+      "6": "interactive",
+      "7": "contributor",
+      "8": "advocate",
+      "9": "hacker",
+      "10": "luddite",
+      "11": "terminal-junkie",
+      "12": "motormouth",
+      "13": "teacher",
+      "14": "teamwork",
+      "15": "everyman",
+      "16": "stepping-up",
+      "17": "you-know-your-stuff",
+      "18": "briber",
+      "19": "long-haul",
+      "20": "stump-the-expert"
     },
     "2": {
-      "1": "Josh Ewer",
-      "2": 10,
-      "3": 1,
+      "1": "Jesse Gavin",
+      "2": "=SUM(C2:T2)",
+      "3": 3,
       "4": 2,
       "5": 1,
-      "6": 1,
-      "7": 3,
-      "8": 1,
-      "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1
+      "14": 1
     },
     "3": {
-      "1": "Tim Schmidt",
-      "2": 3
+      "1": "Chris Montgomery",
+      "2": "=SUM(C3:T3)",
+      "3": 2,
+      "4": 1,
+      "5": 1,
+      "7": 1
     },
     "4": {
-      "1": "Doug Swisher",
-      "2": 3
+      "1": "Josh Ewer",
+      "2": "=SUM(C4:T4)",
+      "3": 3,
+      "7": 1,
+      "14": 1
     },
     "5": {
-      "1": "Jesse Gavin",
-      "2": 2
+      "1": "Rob Hurkes",
+      "2": "=SUM(C5:T5)",
+      "3": 3,
+      "14": 1
     },
     "6": {
-      "1": "Terry Johnson",
-      "2": 2,
-      "12": 1
+      "1": "Brent McCullough",
+      "2": "=SUM(C6:T6)",
+      "3": 2,
+      "4": 1,
+      "14": 1
     },
     "7": {
-      "1": "Brent McCullough",
-      "2": 2
+      "1": "Tim Schmidt",
+      "2": "=SUM(C7:T7)",
+      "3": 3
     },
     "8": {
-      "1": "Scott Canham",
-      "2": 2
+      "1": "Doug Swisher",
+      "2": "=SUM(C8:T8)",
+      "3": 3
     },
     "9": {
-      "1": "Chris Montgomery",
-      "2": 2,
-      "3": 1,
-      "4": 1,
-      "6": 1
+      "1": "Terry Johnson",
+      "2": "=SUM(C9:T9)",
+      "3": 2,
+      "13": 1
     },
     "10": {
-      "1": "Rob Hurkes",
-      "2": 2
+      "1": "Scott Canham",
+      "2": "=SUM(C10:T10)",
+      "3": 2
     },
     "11": {
       "1": "Terry Guan",
-      "2": 1
+      "2": "=SUM(C11:T11)",
+      "3": 2
     },
     "12": {
-      "1": "Derian Anderson",
-      "2": 1
+      "1": "Crystal Koenig",
+      "2": "=SUM(C12:T12)",
+      "3": 1,
+      "6": 1
     },
     "13": {
-      "1": "Dylan Roy",
-      "2": 1
+      "1": "Dustin Dittmer",
+      "2": "=SUM(C13:T13)",
+      "3": 1,
+      "13": 1
     },
     "14": {
-      "1": "Crystal Koenig",
-      "2": 1,
-      "5": 1
-    },
-    "15": {
-      "1": "Douglas Esanbock",
-      "2": 1
-    },
-    "16": {
-      "1": "Jordan Terrell",
-      "2": 1
-    },
-    "17": {
-      "1": "Jason Reed",
-      "2": 1
-    },
-    "18": {
-      "1": "Chad Lahn",
-      "2": 1
-    },
-    "19": {
-      "1": "Shaun Cooper",
-      "2": 1
-    },
-    "20": {
-      "1": "Steve Hebert",
-      "2": 1
-    },
-    "21": {
-      "1": "Steve Stevenson",
-      "2": 1
-    },
-    "22": {
-      "1": "David Meyer",
-      "2": 1
-    },
-    "23": {
-      "1": "Ben Sinchai",
-      "2": 1
-    },
-    "24": {
-      "1": "Chris Tersteeg",
-      "2": 1
-    },
-    "25": {
-      "1": "David Meyer",
-      "2": 1
-    },
-    "26": {
-      "1": "Conrad Dean",
-      "2": 1
-    },
-    "27": {
-      "1": "Luke Sawatsky",
-      "2": 1
-    },
-    "28": {
-      "1": "Dustin Dittmer",
-      "2": 1,
+      "1": "Kevin",
+      "2": "=SUM(C14:T14)",
+      "3": 1,
       "12": 1
     },
+    "15": {
+      "1": "Derian Anderson",
+      "2": "=SUM(C15:T15)",
+      "3": 1
+    },
+    "16": {
+      "1": "Dylan Roy",
+      "2": "=SUM(C16:T16)",
+      "3": 1
+    },
+    "17": {
+      "1": "Douglas Esanbock",
+      "2": "=SUM(C17:T17)",
+      "3": 1
+    },
+    "18": {
+      "1": "Jordan Terrell",
+      "2": "=SUM(C18:T18)",
+      "3": 1
+    },
+    "19": {
+      "1": "Jason Reed",
+      "2": "=SUM(C19:T19)",
+      "3": 1
+    },
+    "20": {
+      "1": "Chad Lahn",
+      "2": "=SUM(C20:T20)",
+      "3": 1
+    },
+    "21": {
+      "1": "Shaun Cooper",
+      "2": "=SUM(C21:T21)",
+      "3": 1
+    },
+    "22": {
+      "1": "Steve Hebert",
+      "2": "=SUM(C22:T22)",
+      "3": 1
+    },
+    "23": {
+      "1": "Steve Stevenson",
+      "2": "=SUM(C23:T23)",
+      "3": 1
+    },
+    "24": {
+      "1": "David Meyer",
+      "2": "=SUM(C24:T24)",
+      "3": 1
+    },
+    "25": {
+      "1": "Ben Sinchai",
+      "2": "=SUM(C25:T25)",
+      "3": 1
+    },
+    "26": {
+      "1": "Chris Tersteeg",
+      "2": "=SUM(C26:T26)",
+      "3": 1
+    },
+    "27": {
+      "1": "David Meyer",
+      "2": "=SUM(C27:T27)",
+      "3": 1
+    },
+    "28": {
+      "1": "Conrad Dean",
+      "2": "=SUM(C28:T28)",
+      "3": 1
+    },
     "29": {
-      "1": "CJ Hanson",
-      "2": 1
+      "1": "Luke Sawatsky",
+      "2": "=SUM(C29:T29)",
+      "3": 1
     },
     "30": {
-      "1": "Kevin",
-      "2": 1,
-      "11": 1
+      "1": "CJ Hanson",
+      "2": "=SUM(C30:T30)",
+      "3": 1
     },
     "31": {
       "1": "Chris Nelson",
-      "2": 1
+      "2": "=SUM(C31:T31)",
+      "3": 1
     },
     "32": {
       "1": "Ming Yu",
-      "2": 0
+      "2": "=SUM(C32:T32)",
+      "3": 1
     },
     "33": {
       "1": "Ryan Bell",
-      "2": 0
+      "2": "=SUM(C33:T33)",
+      "3": 0
     },
     "34": {
       "1": "Jeff Jackson",
-      "2": 0
+      "2": "=SUM(C34:T34)",
+      "3": 0
     },
     "35": {
       "1": "Jason Motylinski",
-      "2": 0
+      "2": "=SUM(C35:T35)",
+      "3": 0
     },
     "36": {
       "1": "Senthil Rajasekharan",
-      "2": 0
+      "2": "=SUM(C36:T36)",
+      "3": 0
     },
     "37": {
       "1": "Scott Ray",
-      "2": 0
+      "2": "=SUM(C37:T37)",
+      "3": 0
     },
     "38": {
       "1": "Sarah Montgomery",
-      "2": 0
+      "2": "=SUM(C38:T38)",
+      "3": 0
     },
     "39": {
       "1": "Phil Whipps",
-      "2": 0
+      "2": "=SUM(C39:T39)",
+      "3": 0
     },
     "40": {
       "1": "John Loesch",
-      "2": 0
+      "2": "=SUM(C40:T40)",
+      "3": 0
     },
     "41": {
       "1": "Bob Galuska",
-      "2": 0
+      "2": "=SUM(C41:T41)",
+      "3": 0
     },
     "42": {
       "1": "Ryan Reuss",
-      "2": 0
+      "2": "=SUM(C42:T42)",
+      "3": 0
     },
     "43": {
       "1": "Caleb Santangelo",
-      "2": 0
+      "2": "=SUM(C43:T43)",
+      "3": 0
     },
     "44": {
       "1": "David Tinnes",
-      "2": 0
+      "2": "=SUM(C44:T44)",
+      "3": 0
     }
   },
   "info": {

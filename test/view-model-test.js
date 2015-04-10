@@ -1,4 +1,5 @@
 var should = require('should');
+var _ = require('lodash');
 var viewModel = require('../src/lib/view-model');
 
 describe('view-model', function () {
@@ -37,15 +38,22 @@ describe('view-model', function () {
 
       should(data).be.ok;
       should(data.people).be.ok;
-      should.deepEqual(data.people[0],
+      should.deepEqual(_.find(data.people, function(person) {
+          return person.name === 'Jesse Gavin';
+        }),
         {
-          'name': 'Josh Ewer',
-          'badges': {
-            'beginner': 1,
-            'experienced': 1
-          }
+          badges: {
+            beginner: 1,
+            experienced: 1,
+            'no-slides': 2,
+            prepared: 1,
+            teamwork: 1
+          },
+          name: 'Jesse Gavin'
         });
-      should.deepEqual(data.people[7],
+      should.deepEqual(_.find(data.people, function(person) {
+          return person.name === 'Chris Montgomery';
+        }),
         {
           'name': 'Chris Montgomery',
           'badges': {
@@ -55,6 +63,7 @@ describe('view-model', function () {
             'contributor': 1
           }
         });
+
       data.people.length.should.equal(43);
 
       done();

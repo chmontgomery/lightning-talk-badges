@@ -23,7 +23,7 @@ module.exports = function (worksheetName) {
 function getTestData(worksheetName) {
   var testDataMap = {
     'People': '../../../test/fixtures/people.json',
-    'Badges': '../../../test/fixtures/badges.json'
+    'Achievements': '../../../test/fixtures/badges.json'
   };
   return fs.readFileAsync(path.join(__dirname, testDataMap[worksheetName]), 'utf8')
     .then(function (jsonString) {
@@ -42,8 +42,8 @@ function getSpreadSheetOptions(worksheetName) {
     worksheetName: worksheetName,
     oauth: {
       email: process.env.DRIVE_USER,
-      keyFile: process.env.PEM_KEY_FILE
-      //key: process.env.PEM_KEY
+      keyFile: process.env.PEM_KEY_FILE,
+      key: process.env.PEM_KEY
     }
   };
 }

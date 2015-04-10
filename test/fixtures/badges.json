@@ -89,6 +89,42 @@
       "2": "silver",
       "3": "Teamwork",
       "4": "coordinate your talk with another person\"s talk in some way"
+    },
+    "16": {
+      "1": "everyman",
+      "2": "silver",
+      "3": "Bringin\" In The Sheep",
+      "4": "talk about a subject that interests non-technical people enough to attend"
+    },
+    "17": {
+      "1": "stepping-up",
+      "2": "silver ",
+      "3": "Stepping Up",
+      "4": "filled in a talk last-minute"
+    },
+    "18": {
+      "1": "you-know-your-stuff",
+      "2": "silver",
+      "3": "You Know Your Stuff",
+      "4": "answered at least three questions from audience without being stumped"
+    },
+    "19": {
+      "1": "briber",
+      "2": "bronze",
+      "3": "I Came For The Free Food",
+      "4": "brought treats, food or beer to talk"
+    },
+    "20": {
+      "1": "long-haul",
+      "2": "platinum",
+      "3": "In It For The Long Haul",
+      "4": "Attended 2024-10-09 lightning talk (10 years!)"
+    },
+    "21": {
+      "1": "stump-the-expert",
+      "2": "bronze",
+      "3": "Stumped The Expert",
+      "4": "asked a question that stumped the speaker (without being a jerk)"
     }
   },
   "info": {
