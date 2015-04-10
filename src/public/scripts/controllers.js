@@ -7,10 +7,15 @@
   module.controller('HomeController', ['$scope', function ($scope) {
     $scope.people = JSON.parse($scope.peopleString);
     $scope.badges = JSON.parse($scope.badgesString);
+    $scope.peopleOrderer = function (person) {
+      return _.reduce(person.badges, function(result, n, key) {
+        result += n;
+        return result;
+      }, 0);
+    };
   }]);
 
   module.controller('PersonBadgesController', ['$scope', function ($scope) {
-
   }]);
 
   module.controller('BadgesController', ['$scope', function ($scope) {

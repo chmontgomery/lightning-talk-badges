@@ -1,7 +1,7 @@
 <div class="container">
   <h1>Leader Board</h1>
 
-    <div ng-repeat="person in people" class="people-row">
+    <div ng-repeat="person in people | orderBy:peopleOrderer:true" class="people-row">
       <div class="row">
         <div class="col-xs-2">
           {{person.name}}

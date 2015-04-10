@@ -23,8 +23,8 @@ module.exports = {
           minSrc: './bower_components/jquery/dist/jquery.min.js'
         },
         {
-          src: './bower_components/lodash/dist/lodash.js',
-          minSrc: './bower_components/lodash/dist/lodash.min.js'
+          src: './bower_components/lodash/lodash.js',
+          minSrc: './bower_components/lodash/lodash.min.js'
         },
         {
           src: './bower_components/angular/angular.js',
