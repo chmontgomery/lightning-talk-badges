@@ -1,9 +1,15 @@
 <div class="container">
   <h1>Leader Board</h1>
 
-  <div ng-repeat="person in people">
-    <div>{{person.name}}</div>
-    <person-badges badges="person.badges" types="badges"></person-badges>
-  </div>
+    <div ng-repeat="person in people" class="people-row">
+      <div class="row">
+        <div class="col-xs-2">
+          {{person.name}}
+        </div>
+        <div class="col-xs-10">
+          <person-badges badges="person.badges" types="badges"></person-badges>
+        </div>
+      </div>
+    </div>
 
 </div>

@@ -1,3 +1,5 @@
-<div>
-  {{badges}}
-</div>
+<span>
+  <span ng-repeat="(key, prop) in badges">
+    <badge badge-id="key" badge-count="prop" badge-types="types"></badge>
+  </span>
+</span>

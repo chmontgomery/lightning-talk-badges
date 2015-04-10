@@ -30,4 +30,18 @@
     };
   });
 
+  module.directive('badge', function () {
+    return {
+      restrict: "E",
+      replace: true,
+      controller: 'BadgesController',
+      templateUrl: '/public/partials/badge.html',
+      scope: {
+        badgeId: "=",
+        badgeCount: "=",
+        badgeTypes: "="
+      }
+    };
+  });
+
 })();

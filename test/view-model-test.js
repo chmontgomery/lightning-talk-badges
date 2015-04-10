@@ -9,14 +9,21 @@ describe('view-model', function () {
 
       should(data).be.ok;
       should(data.badges).be.ok;
-      should.deepEqual(data.badges[0],
+      should(data.badges.beginner).be.ok;
+      should.deepEqual(data.badges.beginner,
         {
-          'id': 'beginner',
           'type': 'bronze',
           'name': 'Beginner',
           'description': 'give 1 lightning talk'
         });
-      data.badges.length.should.equal(14);
+
+      should(data.badges['no-slides']).be.ok;
+      should.deepEqual(data.badges['no-slides'],
+        {
+          'type': 'bronze',
+          'name': 'Look Ma, No Slides!',
+          'description': 'talk does not include any powerpoint (or equivalent) slides'
+        });
 
       done();
 

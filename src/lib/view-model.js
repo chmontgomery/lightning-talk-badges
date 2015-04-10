@@ -78,20 +78,15 @@ module.exports = function () {
       // Badges
       // --------------------
 
-      var badges = []; // todo make map
-      var badgeLegend = _.reduce(_badges.rows['1'], function (result, val, key) {
-        result[val] = null;
-        return result;
-      }, {});
+      var badges = {};
       delete _badges.rows['1'];
 
       _.forEach(_badges.rows, function (val, key) {
-        var b = _.defaults({}, badgeLegend);
-        b.id = val['1'];
-        b.type = val['2'];
-        b.name = val['3'];
-        b.description = val['4'];
-        badges.push(b);
+        var id = val['1'];
+        badges[id] = {};
+        badges[id].type = val['2'];
+        badges[id].name = val['3'];
+        badges[id].description = val['4'];
       });
 
       // --------------------
@@ -121,7 +116,7 @@ module.exports = function () {
               p.badges.experienced = 1;
             }
             if (v >= 5) {
-              p.badges.master = 1;
+              p.badges['lightning-master'] = 1;
             }
           } else if (peopleLegend[k]) {
             p.badges[peopleLegend[k]] = v;
