@@ -43,6 +43,7 @@ module.exports = function () {
         delete valCpy['1'];
         delete valCpy['2'];
         p.badges = {};
+        p.points = 0;
 
         _.forEach(valCpy, function (v, k) {
           if (k === '3') { // special case. refers to # of talks
@@ -58,6 +59,7 @@ module.exports = function () {
           } else if (peopleLegend[k]) {
             p.badges[peopleLegend[k]] = v;
           }
+          p.points += v;
         });
 
 

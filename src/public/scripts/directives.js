@@ -11,8 +11,7 @@
       controller: 'HomeController',
       templateUrl: '/public/partials/home.html',
       scope: {
-        peopleString: "@",
-        badgesString: "@"
+        title: "@"
       },
       link: function (scope, element, attrs) {
         setTimeout(function() { // todo why is this necessary?

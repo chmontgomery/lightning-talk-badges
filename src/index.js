@@ -9,6 +9,7 @@ var cons = require('consolidate');
 var errorHandler = require('./lib/error-handler');
 var requestLogger = require('./lib/request-logger');
 var log = require('./lib/services/logger-service');
+var properties = require('./lib/services/property-service').getProperties();
 
 module.exports = function () {
   var app = express();
@@ -42,7 +43,7 @@ module.exports = function () {
   app.use(compression());
 
   // variables available on every view model
-  app.set('title', 'lightning-badges');
+  app.set('title', properties.get('TITLE'));
   app.set('bundle', require(path.join(__dirname, '../bundle.result.json')));
 
   // make all static files available under /public route
