@@ -1,5 +1,5 @@
 {>"layouts/main"/}
 
 {<body}
-  <home people-string='{people|js|s}' badges-string='{badges|js|s}'></home>
+  <home></home>
 {/body}

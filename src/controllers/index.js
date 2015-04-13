@@ -8,12 +8,13 @@ module.exports = function (app) {
 };
 
 router.get('/', function (req, res) {
+  res.render('index', {});
+});
 
+router.get('/data', function (req, res) {
   viewModel().then(function (data) {
-    //console.log(data);
-    res.render('index', data);
+    res.json(data);
   });
-
 });
 
 router.get('/people', function (req, res) {
