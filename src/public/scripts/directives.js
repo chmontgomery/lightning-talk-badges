@@ -13,6 +13,11 @@
       scope: {
         peopleString: "@",
         badgesString: "@"
+      },
+      link: function (scope, element, attrs) {
+        setTimeout(function() { // todo why is this necessary?
+          $(element).find('.loading-spinner').spin();
+        },1);
       }
     };
   });

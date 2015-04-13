@@ -1,6 +1,7 @@
 <div class="container">
   <h1>Leader Board</h1>
 
+  <div ng-if="people.length > 0">
     <div ng-repeat="person in people | orderBy:peopleOrderer:true" class="people-row">
       <div class="row">
         <div class="col-xs-2">
@@ -11,5 +12,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div ng-if="people.length === 0">
+    <div class="loading-spinner">Loading achievements...</div>
+  </div>
 
 </div>
