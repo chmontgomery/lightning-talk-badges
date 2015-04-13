@@ -1,5 +1,5 @@
 {>"layouts/main"/}
 
 {<body}
-  <home title="{title}"></home>
+  <home data-title="{title}"></home>
 {/body}

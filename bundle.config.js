@@ -40,8 +40,8 @@ module.exports = {
         }
       ],
       options: {
-        useMin: ['min'],
-        rev: ['min'],
+        useMin: ['production'],
+        rev: ['production'],
         watch: {
           scripts: false,
           styles: false
@@ -52,9 +52,9 @@ module.exports = {
       scripts: srcPath + '/**/*.js',
       styles: srcPath + '/**/*.less',
       options: {
-        uglify: ['min'],
-        minCSS: ['min'],
-        rev: ['min'],
+        uglify: ['production'],
+        minCSS: ['production'],
+        rev: ['production'],
         transforms: {
           styles: styleTransforms
         }
