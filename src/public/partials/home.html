@@ -3,7 +3,8 @@
 
   <div ng-if="people.length > 0">
     <div ng-repeat="person in people | orderBy:peopleOrderer:true" class="people-row">
-      <div class="row">
+
+      <div class="row" ng-if="person.points > 0">
         <div class="col-xs-2">
           {{person.name}}
         </div>
@@ -14,6 +15,7 @@
           <person-badges badges="person.badges" types="badges"></person-badges>
         </div>
       </div>
+
     </div>
   </div>
   <div ng-if="people.length === 0">
