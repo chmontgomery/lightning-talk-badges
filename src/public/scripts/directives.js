@@ -13,7 +13,7 @@
       scope: {
         title: "@"
       },
-      link: function (scope, element, attrs) {
+      link: function (scope, element/*, attrs*/) {
         setTimeout(function() { // todo why is this necessary?
           $(element).find('.loading-spinner').spin();
         },1);
@@ -25,7 +25,6 @@
     return {
       restrict: "E",
       replace: true,
-      controller: 'PersonBadgesController',
       templateUrl: '/public/partials/personBadges.html',
       scope: {
         badges: "=",

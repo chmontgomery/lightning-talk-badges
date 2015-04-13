@@ -1,4 +1,4 @@
-/*global angular */
+/*global angular, _ */
 (function () {
   'use strict';
 
@@ -8,22 +8,19 @@
     $scope.people = [];
     $scope.badges = {};
     $scope.peopleOrderer = function (person) {
-      return _.reduce(person.badges, function(result, n, key) {
+      return _.reduce(person.badges, function(result, n/*, key*/) {
         result += n;
         return result;
       }, 0);
     };
     $http.get('/data').
-      success(function(data, status, headers, config) {
+      success(function(data/*, status, headers, config*/) {
         $scope.people = data.people;
         $scope.badges = data.badges;
       }).
-      error(function(data, status, headers, config) {
-        console.log(data);
+      error(function(/*data, status, headers, config*/) {
+        alert('ERROR: failed to load data. Try again later or bug the developer.'); // todo better messaging
       });
-  }]);
-
-  module.controller('PersonBadgesController', ['$scope', function ($scope) {
   }]);
 
   module.controller('BadgesController', ['$scope', function ($scope) {
