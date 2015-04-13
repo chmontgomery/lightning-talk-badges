@@ -19,7 +19,7 @@
         $scope.badges = data.badges;
       }).
       error(function(data, status, headers, config) {
-        console.log('error');
+        console.log(data);
       });
   }]);
 
