@@ -1,18 +1,6 @@
-var less = require('gulp-less'),
-  lazypipe = require('lazypipe'),
-  gif = require('gulp-if'),
+var path = require('path'),
+  transformHelper = require('gulp-bundle-assets').transformHelper,
   srcPath = './src/public';
-
-function stringEndsWith(str, suffix) {
-  return str.indexOf(suffix, str.length - suffix.length) !== -1;
-}
-function isLessFile(file) {
-  return stringEndsWith(file.relative, 'less');
-}
-var styleTransforms = lazypipe()
-  .pipe(function () {
-    return gif(isLessFile, less());
-  });
 
 module.exports = {
   bundle: {
@@ -33,17 +21,10 @@ module.exports = {
         './bower_components/spin.js/spin.js',
         './bower_components/spin.js/jquery.spin.js'
       ],
-      styles: [
-        {
-          src: './bower_components/bootstrap/dist/css/bootstrap.css',
-          minSrc: './bower_components/bootstrap/dist/css/bootstrap.min.css'
-        }
-      ],
       options: {
         useMin: ['production'],
         rev: ['production'],
         watch: {
-          scripts: false,
           styles: false
         }
       }
@@ -56,7 +37,9 @@ module.exports = {
         minCSS: ['production'],
         rev: ['production'],
         transforms: {
-          styles: styleTransforms
+          styles: transformHelper.less({
+            paths: [path.join(__dirname, 'bower_components', 'bootstrap', 'less')]
+          })
         }
       }
     }

@@ -49,12 +49,15 @@ module.exports = function () {
           if (k === '3') { // special case. refers to # of talks
             if (v >= 1) {
               p.badges.beginner = 1;
+              p.points++;
             }
             if (v >= 3) {
               p.badges.experienced = 1;
+              p.points++;
             }
             if (v >= 5) {
               p.badges['lightning-master'] = 1;
+              p.points++;
             }
           } else if (peopleLegend[k]) {
             p.badges[peopleLegend[k]] = v;

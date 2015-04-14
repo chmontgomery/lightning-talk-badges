@@ -2,6 +2,21 @@
   <h1>{{title}}</h1>
 
   <div ng-if="people.length > 0">
+
+    <div class="people-row header">
+      <div class="row">
+        <div class="col-xs-2">
+          Name
+        </div>
+        <div class="col-xs-1">
+          Pts <span class="glyphicon glyphicon-question-sign"
+                 title="Calculation: 1pt for every talk, 1pt for every badge"></span>
+        </div>
+        <div class="col-xs-9">
+
+        </div>
+      </div>
+    </div>
     <div ng-repeat="person in people | orderBy:'-points'" class="people-row">
 
       <div class="row" ng-if="person.points > 0">

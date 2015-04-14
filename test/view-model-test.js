@@ -50,7 +50,7 @@ describe('view-model', function () {
             teamwork: 1
           },
           name: 'Jesse Gavin',
-          points: 7
+          points: 9
         });
       should.deepEqual(_.find(data.people, function(person) {
           return person.name === 'Chris Montgomery';
@@ -63,7 +63,7 @@ describe('view-model', function () {
             'prepared': 1,
             'contributor': 1
           },
-          points: 5
+          points: 6
         });
 
       data.people.length.should.equal(43);
