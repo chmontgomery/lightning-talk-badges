@@ -1,0 +1,6 @@
+{>"layouts/main"/}
+
+{<body}
+  <h1>Available Achievements</h1>
+  <help-achievements></help-achievements>
+{/body}

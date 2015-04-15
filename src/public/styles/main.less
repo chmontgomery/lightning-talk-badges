@@ -54,3 +54,23 @@ span.glyphicon {
     color: #428bca;
   }
 }
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+  li {
+    a {
+      padding: 0 12px;
+    }
+    display: inline;
+    &:after {
+      content: "|";
+    }
+    &:last-child:after
+    {
+      content: '';
+    }
+  }
+}

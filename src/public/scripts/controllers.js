@@ -2,6 +2,10 @@
 (function () {
   'use strict';
 
+  function errorHandler(/*data, status, headers, config*/) {
+    alert('ERROR: failed to load data. Try again later or bug the developer.'); // todo better messaging
+  }
+
   var module = angular.module('LightningBadges.controllers', []);
 
   module.controller('HomeController', ['$scope', '$http', function ($scope, $http) {
@@ -18,9 +22,7 @@
         $scope.people = data.people;
         $scope.badges = data.badges;
       }).
-      error(function(/*data, status, headers, config*/) {
-        alert('ERROR: failed to load data. Try again later or bug the developer.'); // todo better messaging
-      });
+      error(errorHandler);
   }]);
 
   module.controller('BadgesController', ['$scope', function ($scope) {
@@ -40,6 +42,17 @@
           return '#CD7F32';
       }
     };
+  }]);
+
+  module.controller('HelpAchievementsController', ['$scope', '$http', function ($scope, $http) {
+    $scope.people = [];
+    $scope.badges = {};
+    $http.get('/data').
+      success(function(data/*, status, headers, config*/) {
+        $scope.people = data.people;
+        $scope.badges = data.badges;
+      }).
+      error(errorHandler);
   }]);
 
 })();

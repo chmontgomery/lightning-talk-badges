@@ -9,7 +9,16 @@
 </head>
 <body ng-app="LightningBadges">
 
-{+body}{/body}
+<div class="container">
+  {+body}{/body}
+
+  <footer>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/help/achievements">Available Achievements</a></li>
+    </ul>
+  </footer>
+</div>
 
 {settings.bundle.vendor.scripts|s}
 {settings.bundle.main.scripts|s}

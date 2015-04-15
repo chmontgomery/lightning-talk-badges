@@ -10,13 +10,24 @@
       replace: true,
       controller: 'HomeController',
       templateUrl: '/public/partials/home.html',
-      scope: {
-        title: "@"
-      },
       link: function (scope, element/*, attrs*/) {
-        setTimeout(function() { // todo why is this necessary?
+        setTimeout(function () { // todo why is this necessary?
           $(element).find('.loading-spinner').spin();
-        },1);
+        }, 1);
+      }
+    };
+  });
+
+  module.directive('helpAchievements', function () {
+    return {
+      restrict: "E",
+      replace: true,
+      controller: 'HelpAchievementsController',
+      templateUrl: '/public/partials/helpAchievements.html',
+      link: function (scope, element/*, attrs*/) {
+        setTimeout(function () { // todo why is this necessary?
+          $(element).find('.loading-spinner').spin();
+        }, 1);
       }
     };
   });

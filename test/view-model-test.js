@@ -15,7 +15,8 @@ describe('view-model', function () {
         {
           'type': 'bronze',
           'name': 'Beginner',
-          'description': 'give 1 lightning talk'
+          'description': 'give 1 lightning talk',
+          'awarded': 31
         });
 
       should(data.badges['no-slides']).be.ok;
@@ -23,7 +24,8 @@ describe('view-model', function () {
         {
           'type': 'bronze',
           'name': 'Look Ma, No Slides!',
-          'description': 'talk does not include any powerpoint (or equivalent) slides'
+          'description': 'talk does not include any powerpoint (or equivalent) slides',
+          'awarded': 4
         });
 
       done();

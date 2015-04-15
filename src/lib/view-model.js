@@ -22,6 +22,7 @@ module.exports = function () {
         badges[id].type = val['2'];
         badges[id].name = val['3'];
         badges[id].description = val['4'];
+        badges[id].awarded = 0;
       });
 
       // --------------------
@@ -49,18 +50,22 @@ module.exports = function () {
           if (k === '3') { // special case. refers to # of talks
             if (v >= 1) {
               p.badges.beginner = 1;
+              badges.beginner.awarded += 1;
               p.points++;
             }
             if (v >= 3) {
               p.badges.experienced = 1;
+              badges.experienced.awarded += 1;
               p.points++;
             }
             if (v >= 5) {
               p.badges['lightning-master'] = 1;
+              badges['lightning-master'].awarded += 1;
               p.points++;
             }
           } else if (peopleLegend[k]) {
             p.badges[peopleLegend[k]] = v;
+            badges[peopleLegend[k]].awarded += v;
           }
           p.points += v;
         });
